@@ -1,0 +1,89 @@
+// components/_custom-section.scss
+
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.custom-section {
+  padding: 50px 0;
+  animation-fill-mode: both;
+}
+
+.custom-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeInRight 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.custom-content {
+  opacity: 0;
+  animation: fadeInLeft 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.custom-section:hover .custom-image img,
+.custom-section:hover .custom-content {
+  opacity: 1;
+}
+
+.custom-section-reverse .custom-image img {
+  animation: fadeInLeft 2s ease-in-out forwards;
+}
+
+.dynamic-section {
+  background-color: $color-background;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.dynamic-section {
+  background-color: $color-background;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-image {
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #0000001a;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-image:hover {
+  transform: scale(1.05);
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;  
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
