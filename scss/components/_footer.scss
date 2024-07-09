@@ -1,0 +1,62 @@
+// components/_footer.scss
+
+.footer {
+  background-color: $color-footer-bg;
+  color: $color-white-text;
+  padding: 60px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: $color-white-text;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: $color-footer-hover;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.footer-social-icons a {
+  color: $color-footer-social;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: $color-footer-social-hover;
+}
+
+.footer-info {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: $color-grey;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: $color-white-text;
+  transition: color 0.3s ease;
+}
